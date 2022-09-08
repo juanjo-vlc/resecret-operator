@@ -13,6 +13,7 @@ The name ReSecret was chosen because the prefix "Re" means repetition, but it ca
 
 # Usage
 In order to use this operator the following steps should be performed:
+
 1.- Download the code
 ```sh
 git clone https://github.com/juanjo-vlc/resecret-operator.git \
