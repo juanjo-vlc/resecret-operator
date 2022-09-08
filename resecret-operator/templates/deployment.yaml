@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-resecret-operator
+spec:
+  selector:
+    matchLabels:
+      app: resecret-operator
+  template:
+    metadata:
+      labels:
+        app: resecret-operator
+    spec:
+      serviceAccountName: resecret-operator
+      containers:
+        - image: {{ .Values.deployment.image }}
+          name: resecret-operator

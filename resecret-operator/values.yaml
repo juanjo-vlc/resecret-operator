@@ -1,0 +1,6 @@
+deployment:
+  image: juanjovlc2/resecret-operator:0.1.0
+
+serviceAccount:
+  create: yes
+  name: resecret-operator
